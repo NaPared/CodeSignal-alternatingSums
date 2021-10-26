@@ -9,10 +9,14 @@ def alternatingSums(a):
     result1 = 0
     result2 = 0
     result = []
+    
+    #for loop separates the original list index by even and odd
+    #then sums the arrays and appends the results to result array
+    
     for i in range(len(a)):
         if i % 2 == 0:
             a1.append(a[i])
-        elif i % 2 != 0:
+        else:
             a2.append(a[i])
     result1 = sum(a1)
     result2 = sum(a2)
